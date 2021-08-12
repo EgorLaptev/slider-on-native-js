@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.slider__track {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    transition: .5s;
+}
+
+.slider__slide {
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slider__prev,
+.slider__next {
+    width: 25%;
+    background: transparent;
+    z-index: 100;
+}
